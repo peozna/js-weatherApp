@@ -1,0 +1,20 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.weather-container {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: aliceblue;
+}
