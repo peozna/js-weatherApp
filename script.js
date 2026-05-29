@@ -32,25 +32,25 @@ searchButton.addEventListener('click', (event) => {
                     if(data.current_weather.weathercode === 0) {
                         description.textContent = "Clear sky"
                     }
-                    else if(1 < data.current_weather.weathercode > 3) { 
+                    else if(data.current_weather.weathercode > 0 && data.current_weather.weathercode <= 3) { 
                         description.textContent = "Partly cloudy"
                     }
-                    else if(3 < data.current_weather.weathercode > 48) { 
+                    else if(data.current_weather.weathercode > 3 && data.current_weather.weathercode <= 48) { 
                         description.textContent = "Cloudy"
                     }
-                    else if(48 < data.current_weather.weathercode > 57) {
+                    else if(data.current_weather.weathercode > 48 && data.current_weather.weathercode <= 57) {
                         description.textContent = "Fog"
                     }
-                    else if(57 < data.current_weather.weathercode > 67) {
+                    else if(data.current_weather.weathercode > 57 && data.current_weather.weathercode <= 67) {
                         description.textContent = "Drizzle"
                     }
-                    else if(67 < data.current_weather.weathercode > 77) {
+                    else if(data.current_weather.weathercode > 67 && data.current_weather.weathercode <= 77) {
                         description.textContent = "Rain"
                     }
-                    else if(77 < data.current_weather.weathercode > 86) {
+                    else if(data.current_weather.weathercode > 77 && data.current_weather.weathercode <= 86) {
                         description.textContent = "Snow"
                     }
-                    else if(86 < data.current_weather.weathercode > 95) {
+                    else if(data.current_weather.weathercode > 86 && data.current_weather.weathercode <= 95) {
                         description.textContent = "Thunderstorm"
                     }
 
@@ -59,3 +59,5 @@ searchButton.addEventListener('click', (event) => {
           })
 
         })})
+
+

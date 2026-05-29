@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class = "topnav">
         <h1>Weather app</h1>
         <input type="text" id="searchInput" placeholder="Search for a city...">
-        <button id="searchButton" type="submit">Search<</button>
+        <button id="searchButton">Search</button>
     </div>
+
+    <div class = "weather-container">
+        <h2 id="cityName">City Name</h2>
+        <p id="temperature">Temperature</p>
+        <p id="description">Description</p>
+        <p id="windSpeed">Wind Speed</p>
+    </div> 
+
+    <script src="script.js"></script>
 
 </body>
