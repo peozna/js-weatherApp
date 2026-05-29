@@ -56,8 +56,18 @@ searchButton.addEventListener('click', (event) => {
 
                windSpeed.textContent = "Wind Speed: " + data.current_weather.windspeed + " km/h"
                cityName.textContent = city
-          })
 
+               displayWeatherContainer()
+          })
         })})
+        
+        function displayWeatherContainer() {
+            const weatherContainer = document.getElementById('weatherContainer')
+            weatherContainer.style.display = 'block'
+
+            document.body.classList.add('result-state')
+        }
+
+       
 
 

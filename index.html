@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class = "start-state">
     <div class = "topnav">
         <h1>Weather app</h1>
+        <p id="slogan">Check the weather in any city!</p>
         <input type="text" id="searchInput" placeholder="Search for a city...">
         <button id="searchButton">Search</button>
     </div>
 
-    <div class = "weather-container">
-        <h2 id="cityName">City Name</h2>
+    <div id = "weatherContainer" class = "weather-container">
+        <p id="cityName">City Name</p>
         <p id="temperature">Temperature</p>
         <p id="description">Description</p>
         <p id="windSpeed">Wind Speed</p>
