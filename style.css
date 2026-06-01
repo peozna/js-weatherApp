@@ -51,14 +51,24 @@ body.start-state {
 }
 
 .start-state #searchInput {
+    background-color: #ffffff;
+    opacity: 0.3;
     padding: 20px;
+    border-radius: 2%;
+    box-shadow: 6px 6px 5px grey;
+    border: none;
     font-size: var(--font-size-large);
     width: 50%;
     max-width: 90%;
 }
 
 .start-state #searchButton {
+    background-color: #ffffff;
     padding: 20px;
+    border-radius: 2%;
+    border: none;
+    box-shadow: 6px 6px 5px grey;
+    opacity: 0.6;
     font-size: var(--font-size-large);
     margin-left: 10px;
 }
@@ -94,9 +104,8 @@ body.start-state {
 .weather-container {
     display: none;
     padding: 20px;
-    background-color: aliceblue;
-    background: linear-gradient(135deg, #e6e6e6, #d0d0d0);
-    background: opacity(2.0);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     max-width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
